@@ -38,6 +38,15 @@ class LoginPage {
   get newUserSignupHeader() {
     return cy.xpath('/html/body/section/div/div/div[3]/div/h2');
   }
+  get signupNameInput () {
+    return cy.get('input[@data-qa="/signup-name"]');
+  }
+  get signupEmailInput () {
+    return cy.get('input[@data-qa="/signup-email"]');
+  }
+  get signupButton () {
+    return cy.get('button[@data-qa="/signup-button"]');
+  }
 }
 
 export default new LoginPage();

@@ -22,10 +22,13 @@ describe('User Authentication Scenarios', () => {
     SignupPage.enterAccountInfoHeader.should('be.visible');
 
     // Preencher formulário de cadastro
-    SignupPage.titleRadio.click();
+    SignupPage.titleradioMan.click();
     SignupPage.passwordInput.type('testpass');
+    SignupPage.dobDay.click;
     SignupPage.dobDay.select('10');
+    SignupPage.dobMonth.click;
     SignupPage.dobMonth.select('January');
+    SignupPage.dobYear.click;
     SignupPage.dobYear.select('1990');
     SignupPage.newsletterCheckbox.check();
     SignupPage.specialOffersCheckbox.check();

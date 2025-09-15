@@ -1,4 +1,5 @@
 # MyCypressProjectII Excelência em Automação de Testes: Práticas para o sucesso! Trilha Bootcamp de testes automatizados! @Minsait
+Author : Diogo Rangel @diogorangel
 # MyCypressProject capacitação Minsait
 Comandos no cypress que podem ser necessários:
 1 - npm init -y

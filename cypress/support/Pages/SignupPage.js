@@ -34,6 +34,37 @@ class SignupPage {
   get accountDeletedMessage() {
     return cy.get('h2 > b');
   }
+  get enterAccountInfoHeader() {
+    return cy.xpath('/html/body/section/div/div/div/div/h2');
+  }
+  get titleradioMan() {
+    return cy.xpath('/html/body/section/div/div/div/div/form/div[1]/div[1]/label/div/span/input');
+  }
+  get titleradiowoman() {
+    return cy.get('input[id="/id_gender2"]');
+  }
+  get passwordInput() {
+    return cy.get('input[data-qa="password"]');
+  }
+   get dobDay() {
+    return cy.xpath('/html/body/section/div/div/div/div/form/div[5]/div/div[1]/div/select');
+  }
+
+  get dobMonth() {
+    return cy.xpath('/html/body/section/div/div/div/div/form/div[5]/div/div[2]/div/select');
+  }
+
+  get dobYear() {
+    return cy.xpath('/html/body/section/div/div/div/div/form/div[5]/div/div[3]/div/select');
+  }
+
+  get newsletterCheckbox() {
+    return cy.get('input[id="/newsletter"]');
+  }
+
+  get specialOffersCheckbox() {
+    return cy.get('input[id="/optin"]');
+  }
 }
 
 export default new SignupPage();
