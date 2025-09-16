@@ -4,7 +4,10 @@
   "description": "1ª Comands cypress:",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "e2e": "cypress run --env allure=true",
+    "report:allure": "allure generate allure-results --clean -o allure-report && allure open  allure-report",
+    "test:allure": "npm run e2e && npm run report:allure"
   },
   "repository": {
     "type": "git",

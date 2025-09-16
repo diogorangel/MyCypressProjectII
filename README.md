@@ -1,27 +1,28 @@
 # MyCypressProjectII Excelência em Automação de Testes: Práticas para o sucesso! Trilha Bootcamp de testes automatizados! @Minsait
 Author : Diogo Rangel @diogorangel
 # MyCypressProject capacitação Minsait
-Comandos no cypress que podem ser necessários:
-1 - npm init -y
-2 - npm install --save-dev
-Comando para executar o cypress:
-3 - npx cypress open
-Comandos para instalar o Allure:
-npm install --save-dev allure-cypress allure-commandline
-npm install -D @shelex/cypress-allure-plugin
-- yarn cypress open
-- pnpm cypress open
- updated
- Comando para executar testes via allure:
- 4 - npx cypress run --env allure=true
+# Comandos no cypress que podem ser necessários:
+# 1 - npm init -y
+# 2 - npm install --save-dev
+# Comando para executar o cypress:
+# 3 - npx cypress open
+# Comandos para instalar o Allure:
+# npm install --save-dev allure-cypress allure-commandline
+# npm install -D @shelex/cypress-allure-plugin
+# - yarn cypress open
+# - pnpm cypress open
+# updated
+# Comando para executar testes via allure:
+# 4 - npx cypress run --env allure=true
 
- Gerar e visualizar o relatório:
- 5 - npx allure generate allure-results --clean -o allure-report
+# Gerar e visualizar o relatório:
+# 5 - npx allure generate allure-results --clean -o allure-report
 
- Abrir o allure:
-6 - npx allure open 
-Instruções adicionais caso haja necessidade:
-1. Desabilitar verificação de certificado no npm
+# Abrir o allure:
+# 6 - npx allure open 
+# 7 - Executar o Allure : npm run test:allure
+# Instruções adicionais caso haja necessidade:
+#1. Desabilitar verificação de certificado no npm
 npm config set strict-ssl false
 npm config set registry "http://registry.npmjs.org/"
 
