@@ -59,12 +59,64 @@ class SignupPage {
   }
 
   get newsletterCheckbox() {
-    return cy.get('input[id="/newsletter"]');
+    return cy.xpath('/html/body/section/div/div/div/div/form/div[6]/div/span/input');
   }
 
   get specialOffersCheckbox() {
-    return cy.get('input[id="/optin"]');
+    return cy.xpath('/html/body/section/div/div/div/div/form/div[7]/div/span/input');
   }
+  get firstNameInput() {
+    return cy.xpath('/html/body/section/div/div/div/div/form/p[1]/input');
+  }
+  get lastNameInput() {
+    return cy.xpath('//*[@id="last_name"]');
+  }
+  get companyInput() {
+    return cy.xpath('//*[@id="company"]');
+  }
+  get addressInput() {
+    return cy.xpath('//*[@id="address1"]');
+  }
+   get address2Input() {
+    return cy.xpath('/html/body/section/div/div/div/div/form/p[5]/input');
+  }
+  get countrySelect() {
+    return cy.xpath('//*[@id="country"]');
+  }
+  get stateInput() {
+    return cy.xpath('//*[@id="state"]');
+  }
+  get cityInput() {
+    return cy.xpath('//*[@id="city"]');
+  }
+   get zipcodeInput() {
+    return cy.xpath('//*[@id="zipcode"]');
+  }
+  get mobileNumberInput() {
+    return cy.xpath('//*[@id="mobile_number"]');
+  }
+  get createAccountButton() {
+    return cy.xpath('/html/body/section/div/div/div/div/form/button');
+  }
+  get accountCreatedMessage() {
+    return cy.xpath('/html/body/section/div/div/div/h2');
+  }
+  get accountCreatedMessage1() {
+    return cy.xpath('/html/body/section/div/div/div/p[1]');
+  }
+  get accountCreatedMessage2() {
+    return cy.xpath('/html/body/section/div/div/div/p[2]');
+  }
+   get continueButton() {
+    return cy.xpath('//*[@id="form"]/div/div/div/div/a');
+  }
+  get accountDeletedMessage1() {
+    return cy.xpath('/html/body/section/div/div/div/p[1]');
+  }
+  get accountDeletedMessage2() {
+    return cy.xpath('/html/body/section/div/div/div/p[2]');
+  }
+  
 }
 
 export default new SignupPage();

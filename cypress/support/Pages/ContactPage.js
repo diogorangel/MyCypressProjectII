@@ -3,36 +3,39 @@ class ContactPage {
     return cy.get('a[href="/contact_us"]');
   }
 
-  get contactUsButton() {
-    return cy.get('a[href="/contact_us"]');
+  get getInTouchHeader() {
+    return cy.xpath('//*[@id="contact-page"]/div[2]/div[1]/div/h2');
   }
 
-  get productsButton() {
-    return cy.get('a[href="/products"]');
+  get nameInput() {
+    return cy.xpath('//*[@id="contact-us-form"]/div[1]/input');
   }
 
-  get testCasesButton() {
-    return cy.get('a[href="/test_cases"]');
+  get emailInput() {
+    return cy.xpath('//*[@id="contact-us-form"]/div[2]/input');
   }
 
-  get loggedInAs() {
-    return cy.get('li:nth-child(10) > a');
+  get subjectInput() {
+    return cy.xpath('//*[@id="contact-us-form"]/div[3]/input');
   }
 
-  get deleteAccountButton() {
-    return cy.get('a[href="/delete_account"]');
+  get messageTextarea() {
+    return cy.xpath('//*[@id="message"]');
   }
 
-  get logoutButton() {
-    return cy.get('a[href="/logout"]');
+  get fileInput() {
+    return cy.xpath('//*[@id="contact-us-form"]/div[5]/input');
   }
 
-  get homePageHeader() {
-    return cy.get('h2 > b');
+  get submitButton() {
+    return cy.xpath('//*[@id="contact-us-form"]/div[6]/input');
   }
 
-  get accountDeletedMessage() {
-    return cy.get('h2 > b');
+  get successMessage() {
+    return cy.xpath('//*[@id="contact-page"]/div[2]/div[1]/div/div[2]');
+  }
+  get homeButton() {
+    return cy.xpath('/html/body/header/div/div/div/div[2]/div/ul/li[1]/a');
   }
 }
 

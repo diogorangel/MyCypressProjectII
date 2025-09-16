@@ -8,15 +8,15 @@ class HomePage {
   }
 
   get productsButton() {
-    return cy.get('a[href="/products"]');
+    return cy.xpath('//*[@id="header"]/div/div/div/div[2]/div/ul/li[2]/a');
   }
 
   get testCasesButton() {
-    return cy.get('a[href="/test_cases"]');
+    return cy.xpath('//*[@id="header"]/div/div/div/div[2]/div/ul/li[5]/a');
   }
 
   get loggedInAs() {
-    return cy.get('li:nth-child(10) > a');
+    return cy.xpath('//*[@id="header"]/div/div/div/div[2]/div/ul/li[10]/a');
   }
 
   get deleteAccountButton() {
@@ -30,9 +30,8 @@ class HomePage {
   get homePageHeader() {
     return cy.get('h2 > b');
   }
-
   get accountDeletedMessage() {
-    return cy.get('h2 > b');
+    return cy.xpath('//*[@id="form"]/div/div/div/h2');
   }
 }
 

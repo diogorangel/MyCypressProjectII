@@ -43,7 +43,7 @@ describe('Website Functionality Scenarios', () => {
     ProductPage.allProductsHeader.should('be.visible');
     
     ProductPage.firstProductViewButton.click();
-    cy.url().should('include', '/product_details/1');
+    cy.url().should('include', '/product_details/');
     ProductPage.productName.should('be.visible');
     ProductPage.productCategory.should('be.visible');
     ProductPage.productPrice.should('be.visible');

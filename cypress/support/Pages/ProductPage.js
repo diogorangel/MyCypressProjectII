@@ -8,31 +8,40 @@ class ProductPage {
   }
 
   get productsButton() {
-    return cy.get('a[href="/products"]');
+    return cy.xpath('//*[@id="header"]/div/div/div/div[2]/div/ul/li[2]/a');
   }
 
   get testCasesButton() {
-    return cy.get('a[href="/test_cases"]');
+    return cy.xpath('//*[@id="header"]/div/div/div/div[2]/div/ul/li[5]/a');
   }
 
-  get loggedInAs() {
-    return cy.get('li:nth-child(10) > a');
+  get allProductsHeader() {
+    return cy.xpath('/html/body/section[2]/div/div/div[2]/div/h2');
   }
 
-  get deleteAccountButton() {
-    return cy.get('a[href="/delete_account"]');
+  get firstProductViewButton() {
+    return cy.xpath('/html/body/section[2]/div/div/div[2]/div/div[2]/div/div[2]/ul/li/a');
   }
 
-  get logoutButton() {
-    return cy.get('a[href="/logout"]');
+  get productName() {
+    return cy.xpath('/html/body/section/div/div/div[2]/div[2]/div[2]/div/h2');
   }
 
-  get homePageHeader() {
-    return cy.get('h2 > b');
+  get productCategory() {
+    return cy.xpath('/html/body/section/div/div/div[2]/div[2]/div[2]/div/p[1]');
   }
 
-  get accountDeletedMessage() {
-    return cy.get('h2 > b');
+  get productPrice() {
+    return cy.xpath('/html/body/section/div/div/div[2]/div[2]/div[2]/div/span/span');
+  }
+   get productAvailability() {
+    return cy.xpath('/html/body/section/div/div/div[2]/div[2]/div[2]/div/p[2]');
+   }
+  get productCondition() {
+    return cy.xpath('/html/body/section/div/div/div[2]/div[2]/div[2]/div/p[3]');
+  }
+  get productBrand() {
+    return cy.xpath('/html/body/section/div/div/div[2]/div[2]/div[2]/div/p[4]');
   }
 }
 

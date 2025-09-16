@@ -39,13 +39,31 @@ class LoginPage {
     return cy.xpath('/html/body/section/div/div/div[3]/div/h2');
   }
   get signupNameInput () {
-    return cy.get('input[@data-qa="/signup-name"]');
+    return cy.xpath('/html/body/section/div/div/div[3]/div/form/input[2]');
   }
   get signupEmailInput () {
-    return cy.get('input[@data-qa="/signup-email"]');
+    return cy.xpath('/html/body/section/div/div/div[3]/div/form/input[3]');
   }
   get signupButton () {
-    return cy.get('button[@data-qa="/signup-button"]');
+    return cy.xpath('/html/body/section/div/div/div[3]/div/form/button');
+  }
+  get loginHeader () {
+    return cy.xpath('//*[@id="form"]/div/div/div[1]/div[1]/h2');
+  }
+   get loginEmailInput () {
+    return cy.xpath('//*[@id="form"]/div/div/div[1]/div[1]/form/input[2]');
+  }
+  get loginPasswordInput () {
+    return cy.xpath('//*[@id="form"]/div/div/div[1]/div[1]/form/input[3]');
+  }
+  get loginButton () {
+    return cy.xpath('//*[@id="form"]/div/div/div[1]/div[1]/form/button');
+  }
+  get loginErrorMessage () {
+    return cy.xpath('//*[@id="form"]/div/div/div[1]/div[1]/form/p');
+  }
+   get emailExistMessage () {
+    return cy.xpath('//*[@id="form"]/div/div/div[3]/div/form/p');
   }
 }
 
